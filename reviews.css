@@ -1,0 +1,216 @@
+.comments_list {
+    display: block;
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    border: 2px solid #2c88ec;
+    border-radius: 10px;
+}
+@media (max-width: 992px) {
+    .comments_list {
+        max-width: calc(100% - 20px);
+    }
+}
+@media (max-width: 768px) {
+    .comments_list {
+        padding: 15px;
+    }
+}
+.comments_list_row {
+    border-radius: 20px;
+    color: #000;
+    font-size: 15px;
+    line-height: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.photo_avatar {
+    padding-right: 20px;
+}
+.photo_avatar img {
+    display: block;
+    min-width: 50px;
+    max-width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
+.comment_name {
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+.comment_text {
+    opacity: 0.85;
+}
+.reviews {
+    position: relative;
+    flex-grow: 1;
+}
+.comments__item__meta {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.comments_list_btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 7px;
+}
+.comments_list_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.comments_list_btn:hover,
+.comments_list_btn:focus,
+.comments_list_btn:active {
+    opacity: 1;
+}
+.custom-icon {
+    background-image: url(/landings/273766/1658847061/images/action_icons_20px_2x.png);
+    display: inline-block;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    margin: 0 3px 0 0;
+    padding: 0;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+.custom-icon-like {
+    background-position: 0 -60px !important;
+}
+.custom-icon-comment {
+    background-position: 0 -140px !important;
+}
+.custom-icon-share {
+    background-position: 0 -100px !important;
+}
+.custom-icon-view {
+    background-position: 0 -161px !important;
+}
+.comments_list_icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.comments_list_icons_item {
+    color: #000;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+.comments_list_icons_item:hover,
+.comments_list_icons_item:focus,
+.comments_list_icons_item:active {
+    opacity: 1;
+}
+.item_views {
+    margin-left: auto;
+}
+.item_like {
+    margin-right: 20px;
+}
+.likes_wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.like_people_image {
+    border-radius: 100%;
+    border: 2px solid #2c88ec;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+.like_people_image_wrap {
+    position: relative;
+}
+.like_people_image_wrap:nth-child(1) {
+    z-index: 2;
+}
+.like_people_image_wrap:nth-child(2) {
+    margin-left: -15px;
+}
+.like_people_images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 10px;
+}
+.like_people_text {
+    color: #000;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.safety-block {
+    z-index: 1;
+    pointer-events: none;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.safety-block ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 15px 0 0;
+    padding: 0;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.safety-block ul li {
+    list-style-type: none;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 0 10px;
+    color: #000;
+}
+.safety-block h4 {
+    margin: 15px 0 10px;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.safety-block img {
+    max-width: 30px;
+    margin: 0 auto;
+}
+.safety-block p {
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .safety-block {
+    }
+}
+
+.location-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+}
+.location-wrapper img {
+    margin-right: 10px;
+}
